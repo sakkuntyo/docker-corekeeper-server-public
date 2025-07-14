@@ -1,6 +1,6 @@
 FROM "steamcmd/steamcmd:ubuntu-24"
 
-# FactoryServer.sh が root では実行できないため専用ユーザー作成
+# corekeeper 初回起動時に タイムゾーンを選択させられることを回避
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 # サーバー実行
